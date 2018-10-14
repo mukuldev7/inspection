@@ -27,7 +27,7 @@ function initializeConnectionPool(db_config) {
             connect.release();
         });
     }
-    setInterval(keep_alive, 3000); // ping be used if connection drops for some reason
+    // setInterval(keep_alive, 3000); // ping be used if connection drops for some reason
     return conn;
 }
 global.connection = initializeConnectionPool(db_config);
