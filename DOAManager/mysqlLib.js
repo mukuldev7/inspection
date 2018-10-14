@@ -8,7 +8,7 @@ let db_config = {
     database: config.get("databaseSettings.database"),
     connectionLimit: 5,
     multipleStatements: true,
-    acquireTimeout: 80000
+    acquireTimeout: 800000
 };
 
 function initializeConnectionPool(db_config) {
