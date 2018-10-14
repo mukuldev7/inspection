@@ -1,8 +1,8 @@
 {
     "PORT": "3000",
     "APP_NAME": "production",
-    "swaggerLink2": "http://18.207.194.130/swagger/",
-    "swaggerLink": "http://18.207.194.130/api",
+    "swaggerLink2": "http://107.23.249.26/swagger/",
+    "swaggerLink": "http://107.23.249.26/api",
     "projectName": "inspection",
     "databaseSettings": {
         "host": "company.cy821g94ocee.us-east-1.rds.amazonaws.com",
