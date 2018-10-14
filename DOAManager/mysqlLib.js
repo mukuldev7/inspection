@@ -20,12 +20,13 @@ function initializeConnectionPool(db_config) {
     });
     function keep_alive() {
         conn.getConnection((err, connect) => {
+            console.log("mysql error ", err ? err : "NO error");
             if (err) return;
             connect.ping();
             connect.release();
         });
     }
-    // setInterval(keep_alive, 3000); // ping be used if connection drops for some reason
+    setInterval(keep_alive, 3000); // ping be used if connection drops for some reason
     return conn;
 }
 global.connection = initializeConnectionPool(db_config);
