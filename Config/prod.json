@@ -5,10 +5,10 @@
     "swaggerLink": "http://107.23.249.26/api",
     "projectName": "inspection",
     "databaseSettings": {
-        "host": "company.cy821g94ocee.us-east-1.rds.amazonaws.com",
+        "host": "companyname.cy821g94ocee.us-east-1.rds.amazonaws.com",
         "user": "inspector",
-        "password": "dummyinspector007",
-        "database": "company",
+        "password": "dummy007",
+        "database": "production",
         "port": "3306",
         "mongo_db_connection": "",
         "redis": {
