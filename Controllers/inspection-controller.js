@@ -86,6 +86,7 @@ exports.register_login_user_with_role = function (req, res) {
         }
     };
     return async.autoInject(tasks, (err, data) => {
+        console.log("Error ", err ? err : "No Error");
         if (err) {
             if (_.isString(err)) return sendResponse.sendErrorMessage(err, res);
             return sendResponse.somethingWentWrong(res);
@@ -186,6 +187,7 @@ exports.add_inspection_venue = function (req, res) {
         }
     };
     return async.autoInject(tasks, (err, data) => {
+        console.log("Error ", err ? err : "No Error");
         if (err) return sendResponse.sendErrorMessage("Something went wrong ! Please Try again", res);
         return sendResponse.sendSuccessData({}, res, "Inspection venue added !");
     });
@@ -333,6 +335,7 @@ exports.paginate_inspection_list = function (req, res) {
     };
 
     return async.autoInject(tasks, (err, data) => {
+        console.log("Error ", err ? err : "No Error");
         if (err) {
             if (_.isString(err)) return sendResponse.sendErrorMessage(err, res);
             return sendResponse.somethingWentWrong(res);
