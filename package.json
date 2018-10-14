@@ -1,0 +1,32 @@
+{
+  "name": "inspection",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD # inspection ======= # inspection company inspection >>>>>>> 8a8b52db626f36eb01cc950b92dd2d5755b6a187",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "config": "^1.30.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "html": "^1.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "log4js": "^3.0.6",
+    "moment": "^2.22.2",
+    "mysql": "^2.16.0",
+    "swagger-express": "^1.0.5",
+    "validator": "^10.8.0"
+  },
+  "devDependencies": {}
+}
